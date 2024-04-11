@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="fxAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="700.0"
+            styleClass="Pane" stylesheets="@../stylesheets/styles.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.QuizLetController">
+    <BorderPane fx:id="fxAdalBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0"
+                style="-fx-background-color: rgb(239, 240, 242); -fx-background-radius: 10 10 10 10;"
+                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0">
+        <top>
+            <AnchorPane maxHeight="-Infinity" prefHeight="60.0" prefWidth="700.0" style="-fx-background-color: #ffffff;"
+                        styleClass="topPane">
+
+                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0" pickOnBounds="true"
+                           preserveRatio="true" AnchorPane.topAnchor="22.0">
+                    <image>
+                        <Image url="@../stylesheets/Icons/letter-q-big.png"/>
+                    </image>
+                </ImageView>
+                <HBox layoutX="174.0" layoutY="29.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0"
+                      prefWidth="350.0" AnchorPane.topAnchor="10.0">
+
+                    <Pane fx:id="fxBrowse" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" onMousePressed="#Browse" prefHeight="25.0" prefWidth="65.0"
+                          styleClass="Menu">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="65.0"
+                               text="Browse">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../stylesheets/Icons/layers.png"/>
+                                    </image>
+                                </ImageView>
+
+                            </graphic>
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets left="3.0"/>
+                            </padding>
+                        </Label>
+                        <HBox.margin>
+                            <Insets right="10.0"/>
+                        </HBox.margin>
+
+                    </Pane>
+                    <Pane fx:id="fxStudy" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" onMousePressed="#Study" prefHeight="25.0" prefWidth="65.0"
+                          styleClass="Menu">
+                        <Label prefHeight="20.0" prefWidth="65.0" text="Study">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../stylesheets/Icons/bulb.png"/>
+                                    </image>
+                                </ImageView>
+
+                            </graphic>
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                            <padding>
+                                <Insets left="6.0"/>
+                            </padding>
+                        </Label>
+                        <HBox.margin>
+                            <Insets right="10.0"/>
+                        </HBox.margin>
+
+                    </Pane>
+                    <Pane fx:id="fxTest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" onMousePressed="#Test" prefHeight="25.0" prefWidth="65.0"
+                          styleClass="Menu">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="65.0"
+                               text="Test">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../stylesheets/Icons/graduation-cap.png"/>
+                                    </image>
+                                </ImageView>
+
+                            </graphic>
+                            <padding>
+                                <Insets left="11.0"/>
+                            </padding>
+                        </Label>
+                        <HBox.margin>
+                            <Insets right="10.0"/>
+                        </HBox.margin>
+                    </Pane>
+                    <Pane fx:id="fxCreate" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" onMousePressed="#Create" prefHeight="25.0" prefWidth="65.0"
+                          styleClass="Menu">
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="65.0"
+                               text="Create">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="16.0" layoutY="43.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../stylesheets/Icons/pencil.png"/>
+                                    </image>
+                                </ImageView>
+
+                            </graphic>
+                            <padding>
+                                <Insets left="5.0" right="5.0"/>
+                            </padding>
+                        </Label>
+                    </Pane>
+                    <padding>
+                        <Insets bottom="15.0" left="40.0" top="10.0"/>
+                    </padding>
+                </HBox>
+            </AnchorPane>
+        </top>
+        <left>
+
+        </left>
+        <center>
+            <BorderPane fx:id="fxBorderCenter" prefHeight="425.0" prefWidth="700.0">
+                <center>
+                    <VBox fx:id="fxMidjuPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0"
+                          prefWidth="450.0"
+                          styleClass="MidjuPane" BorderPane.alignment="CENTER">
+                        <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true"
+                                   styleClass="reading">
+                            <image>
+                                <Image url="@../stylesheets/Icons/pngwing.com.png"/>
+                            </image>
+                        </ImageView>
+                        <padding>
+                            <Insets bottom="100.0" left="150.0" top="100.0"/>
+                        </padding>
+
+                    </VBox>
+
+                </center>
+            </BorderPane>
+
+        </center>
+        <right>
+
+        </right>
+
+
+    </BorderPane>
+    <Pane prefHeight="250.0" prefWidth="175.0" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="250.0" prefWidth="200.0">
+            <Pane fx:id="fxSearchDrop" prefHeight="150.0" prefWidth="200.0" styleClass="Search-tab" visible="false">
+                <Pane fx:id="fxBackSearch" layoutX="12.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                      prefHeight="25.0" prefWidth="25.0" styleClass="BackArrow">
+                    <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../stylesheets/Icons/arrow-right.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </Pane>
+            <VBox fx:id="fxLeitDrop" visible="false" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="25.0"
+                  AnchorPane.topAnchor="60.0">
+                <ListView fx:id="fxQuizzezList" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0"
+                          prefWidth="150.0"/>
+            </VBox>
+            <Pane fx:id="fxSearchArea" styleClass="Search-border" AnchorPane.leftAnchor="50.0"
+                  AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                <TextField fx:id="fxLeit" editable="false" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="135.0"
+                           styleClass="Searchfield" visible="false" AnchorPane.bottomAnchor="1.0"
+                           AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+                    <padding>
+                        <Insets left="20.0"/>
+                    </padding>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </TextField>
+                <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="6.0" layoutY="10.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../stylesheets/Icons/search.png"/>
+                    </image>
+                </ImageView>
+
+            </Pane>
+
+        </AnchorPane>
+    </Pane>
+</AnchorPane>

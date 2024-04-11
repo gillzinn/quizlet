@@ -1,0 +1,171 @@
+.Green{
+-fx-border-color: rgba(0,255,38,0.5);
+-fx-border-width: 2px;
+-fx-border-radius: 10px;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+.Red{
+-fx-border-color: rgba(255,0,0,0.5);
+-fx-border-width: 2px;
+-fx-border-radius: 10px;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+
+.Darken{
+-fx-opacity: 0.9;
+}
+
+.Button{
+-fx-background-radius: 10 10 10 10;
+-fx-background-color: #ffffff;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+.Button:hover{
+
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+.Button1{
+-fx-background-color: #ffffff;
+-fx-border-color: rgb(220, 220, 220);
+-fx-border-radius: 4px;
+-fx-border-width:2px;
+}
+.Button2{
+-fx-background-color: rgb(240, 242, 246);
+-fx-background-radius: 10 10 10 10;
+}
+
+.Button2:hover{
+
+-fx-background-color: rgb(228, 230, 236);
+
+}
+
+.Button3:hover{
+-fx-border-color: WHITE;
+-fx-border-width: 0px 0px 0px 3px;
+}
+
+.list-view .list-cell:even {
+-fx-background-color:  #ffffff ;
+-fx-text-fill: #b7b7b7;
+
+}
+.list-view .list-cell:odd {
+-fx-background-color:  #ffffff;
+-fx-text-fill: #b7b7b7;
+}
+
+.MidjuPane{
+-fx-background-color: #ffffff;
+-fx-background-radius: 10 10 10 10;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+
+}
+.Search-tab{
+-fx-background-color: #ffffff;
+-fx-background-radius: 0 0 10 10;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 10);
+}
+
+.topPane{
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, -2);
+}
+
+.Searchfield{
+-fx-background-color: rgb(240, 242, 246);
+-fx-background-radius: 10 10 10 10;
+-fx-background-insets: 0;
+}
+
+.Searchfield .content {
+-fx-background-color: rgb(240, 242, 246);
+-fx-text-fill: gray;
+-fx-background-insets: 0;
+-fx-background-radius: 0;
+}
+
+.Searchfield:focused .content {
+-fx-background-color: rgb(240, 242, 246);
+-fx-background-insets: 0;
+-fx-background-radius: 0;
+}
+
+.BackArrow{
+-fx-background-radius: 12 12 12 12;
+}
+
+.BackArrow:hover{
+-fx-background-color: rgb(228, 230, 236);
+}
+
+.Search-border{
+-fx-background-radius: 10 10 10 10;
+-fx-background-color: rgb(240, 242, 246);
+
+}
+
+.Search-border:hover{
+-fx-background-radius: 10 10 10 10;
+-fx-background-color: rgb(228, 230, 236);
+}
+
+.Menu{
+}
+
+.Menu:hover{
+
+-fx-background-radius: 10 10 10 10;
+-fx-background-color: rgb(240, 242, 246);
+
+}
+
+.Selected{
+-fx-border-width: 0px 0px 3px 0px;
+-fx-border-color: rgb(33, 150, 243);
+}
+
+.reading{
+-fx-opacity: 0.06;
+}
+
+.BrowseDiv{
+-fx-background-color: #ffffff;
+-fx-background-radius: 10 10 10 10;
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.BrowseDiv:hover{
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.Arrows{
+-fx-background-radius: 10 10 10 10;
+}
+
+.Arrows:hover{
+-fx-background-color: rgb(228, 230, 236);
+
+}
+
+.DivStudy{
+-fx-border-color: rgb(220, 220, 220);
+
+-fx-border-width: 0 0.5px 0  0 ;
+}
+
+.DivTest{
+-fx-border-color: rgb(220, 220, 220);
+
+-fx-border-width: 0 0 0  0.5px ;
+}
+
+.DivTest:hover{
+-fx-font-size: 14px;
+}
+
+.DivStudy:hover{
+-fx-font-size: 14px;
+}
+
